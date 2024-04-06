@@ -1,0 +1,226 @@
+{
+    "Title": {
+        "jacc_sim": "1.0",
+        "biobert_sim": "1.0",
+        "ensemble_sim": "1.0",
+        "precision": "1.0",
+        "recall": "1.0",
+        "f1_score": "1.0"
+    },
+    "Date": {
+        "jacc_sim": "0.0",
+        "biobert_sim": "0.9630627",
+        "ensemble_sim": "0.33707194626331327",
+        "precision": "0.0",
+        "recall": "0.0",
+        "f1_score": "Nan"
+    },
+    "To Provider": {
+        "jacc_sim": "0.25",
+        "biobert_sim": "0.9048209",
+        "ensemble_sim": "0.4791873216629028",
+        "precision": "0.3333333333333333",
+        "recall": "0.5",
+        "f1_score": "0.4"
+    },
+    "Phone": {
+        "jacc_sim": "0.3333333333333333",
+        "biobert_sim": "0.9604639",
+        "ensemble_sim": "0.5528290251890818",
+        "precision": "0.5",
+        "recall": "0.5",
+        "f1_score": "0.5"
+    },
+    "Fax": {
+        "jacc_sim": "0.3333333333333333",
+        "biobert_sim": "0.9650049",
+        "ensemble_sim": "0.5544183890024821",
+        "precision": "0.5",
+        "recall": "0.5",
+        "f1_score": "0.5"
+    },
+    "Name": {
+        "jacc_sim": "0.2",
+        "biobert_sim": "0.96495396",
+        "ensemble_sim": "0.4677338856458664",
+        "precision": "0.3333333333333333",
+        "recall": "0.3333333333333333",
+        "f1_score": "0.3333333333333333"
+    },
+    "Practice": {
+        "jacc_sim": "0.0",
+        "biobert_sim": "0.7882302",
+        "ensemble_sim": "0.27588056325912474",
+        "precision": "0.0",
+        "recall": "0.0",
+        "f1_score": "Nan"
+    },
+    "Address": {
+        "jacc_sim": "0.3333333333333333",
+        "biobert_sim": "0.9772203",
+        "ensemble_sim": "0.5586937705675761",
+        "precision": "0.5",
+        "recall": "0.5",
+        "f1_score": "0.5"
+    },
+    "Diagnosis": {
+        "jacc_sim": "0.0",
+        "biobert_sim": "0.8713915",
+        "ensemble_sim": "0.30498701632022857",
+        "precision": "0.0",
+        "recall": "0.0",
+        "f1_score": "Nan"
+    },
+    "ICD-10": {
+        "jacc_sim": "0.0",
+        "biobert_sim": "0.90561384",
+        "ensemble_sim": "0.31696484386920926",
+        "precision": "0.0",
+        "recall": "0.0",
+        "f1_score": "Nan"
+    },
+    "Order Name": {
+        "jacc_sim": "0.75",
+        "biobert_sim": "0.987069",
+        "ensemble_sim": "0.8329741537570954",
+        "precision": "0.8571428571428571",
+        "recall": "0.8571428571428571",
+        "f1_score": "0.8571428571428571"
+    },
+    "Schedule Within": {
+        "jacc_sim": "1.0",
+        "biobert_sim": "1.0",
+        "ensemble_sim": "1.0",
+        "precision": "1.0",
+        "recall": "1.0",
+        "f1_score": "1.0"
+    },
+    "Note to Provider": {
+        "jacc_sim": "0.6666666666666666",
+        "biobert_sim": "0.9759096",
+        "ensemble_sim": "0.774901690085729",
+        "precision": "0.9090909090909091",
+        "recall": "0.7142857142857143",
+        "f1_score": "0.8"
+    },
+    "Reason for Referral": {
+        "jacc_sim": "0.0",
+        "biobert_sim": "0.8555493",
+        "ensemble_sim": "0.29944224655628204",
+        "precision": "0.0",
+        "recall": "0.0",
+        "f1_score": "Nan"
+    },
+    "of requested visits": {
+        "jacc_sim": "1.0",
+        "biobert_sim": "0.9999999",
+        "ensemble_sim": "0.9999999582767487",
+        "precision": "1.0",
+        "recall": "1.0",
+        "f1_score": "1.0"
+    },
+    "Patient Name": {
+        "jacc_sim": "0.0",
+        "biobert_sim": "0.9040989",
+        "ensemble_sim": "0.3164346247911453",
+        "precision": "0.0",
+        "recall": "0.0",
+        "f1_score": "Nan"
+    },
+    "Sex": {
+        "jacc_sim": "0.0",
+        "biobert_sim": "0.9597381",
+        "ensemble_sim": "0.3359083265066147",
+        "precision": "0.0",
+        "recall": "0.0",
+        "f1_score": "Nan"
+    },
+    "DOB": {
+        "jacc_sim": "0.0",
+        "biobert_sim": "0.96426815",
+        "ensemble_sim": "0.3374938517808914",
+        "precision": "0.0",
+        "recall": "0.0",
+        "f1_score": "Nan"
+    },
+    "Age": {
+        "jacc_sim": "0.0",
+        "biobert_sim": "0.96311337",
+        "ensemble_sim": "0.33708967864513395",
+        "precision": "0.0",
+        "recall": "0.0",
+        "f1_score": "Nan"
+    },
+    "Patient Address": {
+        "jacc_sim": "0.3333333333333333",
+        "biobert_sim": "0.9726156",
+        "ensemble_sim": "0.5570821265379587",
+        "precision": "0.5",
+        "recall": "0.5",
+        "f1_score": "0.5"
+    },
+    "Patient Phone": {
+        "jacc_sim": "0.42857142857142855",
+        "biobert_sim": "0.9840683",
+        "ensemble_sim": "0.6229953246457236",
+        "precision": "0.6",
+        "recall": "0.6",
+        "f1_score": "0.6"
+    },
+    "Primary Insurance": {
+        "jacc_sim": "0.0",
+        "biobert_sim": "0.8227477",
+        "ensemble_sim": "0.28796169757843015",
+        "precision": "0.0",
+        "recall": "0.0",
+        "f1_score": "Nan"
+    },
+    "ID": {
+        "jacc_sim": "0.0",
+        "biobert_sim": "0.9144957",
+        "ensemble_sim": "0.3200734972953796",
+        "precision": "0.0",
+        "recall": "0.0",
+        "f1_score": "Nan"
+    },
+    "Policy Holder": {
+        "jacc_sim": "0.0",
+        "biobert_sim": "0.9040989",
+        "ensemble_sim": "0.3164346247911453",
+        "precision": "0.0",
+        "recall": "0.0",
+        "f1_score": "Nan"
+    },
+    "Secondary Insurance": {
+        "jacc_sim": "1.0",
+        "biobert_sim": "1.0000002",
+        "ensemble_sim": "1.0000000834465026",
+        "precision": "1.0",
+        "recall": "1.0",
+        "f1_score": "1.0"
+    },
+    "Notes": {
+        "jacc_sim": "0.3515625",
+        "biobert_sim": "0.98523706",
+        "ensemble_sim": "0.5733485966920853",
+        "precision": "0.5421686746987951",
+        "recall": "0.5",
+        "f1_score": "0.5202312138728323"
+    },
+    "Signature": {
+        "jacc_sim": "0.5",
+        "biobert_sim": "0.9843545",
+        "ensemble_sim": "0.669524073600769",
+        "precision": "0.6666666666666666",
+        "recall": "0.6666666666666666",
+        "f1_score": "0.6666666666666666"
+    },
+    "Footer": {
+        "jacc_sim": "0.26666666666666666",
+        "biobert_sim": "0.98043185",
+        "ensemble_sim": "0.5164844824870427",
+        "precision": "0.42105263157894735",
+        "recall": "0.42105263157894735",
+        "f1_score": "0.42105263157894735"
+    }
+}
