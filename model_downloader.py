@@ -2,8 +2,15 @@ from transformers import AutoTokenizer, AutoModel
 
 
 def download_model(tokenizer_hub_path:str, model_hub_path:str, tokenizer_local_path:str, model_local_path:str):
-    '''This funciton takes in paths to a specific model and its token in the hugging face hub,
-    downloads the model and tokenizer and saves them in a specifiied local path.'''
+    '''This funciton takes in paths to a specific model and its tokenizer in the hugging face hub,
+    downloads the model and tokenizer and saves them in a specifiied local path.
+    
+    Parameters:
+        tokenizer_hub_path (string): The tokenizer path in the hugging face hub
+        model_hub_path (string): The model path in the hugging face hub
+        tokenizer_local_path (string): The path to a local repository where the tokenizer will be stored
+        model_local_path (string): The path to a local repository where the model will be stored
+    '''
 
     #Downloads the tokenizer and model from the huggingface hub
     tokenizer = AutoTokenizer.from_pretrained(tokenizer_hub_path)

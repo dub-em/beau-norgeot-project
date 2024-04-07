@@ -1,226 +1,260 @@
 {
     "Title": {
-        "jacc_sim": "1.0",
-        "biobert_sim": "1.0",
-        "ensemble_sim": "1.0",
-        "precision": "1.0",
-        "recall": "1.0",
-        "f1_score": "1.0"
+        "Jacc_Sim": 1.0,
+        "BioBERT_Sim": 1.0,
+        "Ensemble_Sim": 1.0,
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1_Score": 1.0,
+        "Avg_TextLength": 2.0
     },
     "Date": {
-        "jacc_sim": "0.0",
-        "biobert_sim": "0.9630627",
-        "ensemble_sim": "0.33707194626331327",
-        "precision": "0.0",
-        "recall": "0.0",
-        "f1_score": "Nan"
+        "Jacc_Sim": 0.0,
+        "BioBERT_Sim": 0.9630627036094666,
+        "Ensemble_Sim": 0.33707194626331327,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": "Nan",
+        "Avg_TextLength": 1.0
     },
     "To Provider": {
-        "jacc_sim": "0.25",
-        "biobert_sim": "0.9048209",
-        "ensemble_sim": "0.4791873216629028",
-        "precision": "0.3333333333333333",
-        "recall": "0.5",
-        "f1_score": "0.4"
+        "Jacc_Sim": 0.25,
+        "BioBERT_Sim": 0.9048209190368652,
+        "Ensemble_Sim": 0.4791873216629028,
+        "Precision": 0.3333333333333333,
+        "Recall": 0.5,
+        "F1_Score": 0.4,
+        "Avg_TextLength": 2.5
     },
     "Phone": {
-        "jacc_sim": "0.3333333333333333",
-        "biobert_sim": "0.9604639",
-        "ensemble_sim": "0.5528290251890818",
-        "precision": "0.5",
-        "recall": "0.5",
-        "f1_score": "0.5"
+        "Jacc_Sim": 0.3333333333333333,
+        "BioBERT_Sim": 0.9604638814926147,
+        "Ensemble_Sim": 0.5528290251890818,
+        "Precision": 0.5,
+        "Recall": 0.5,
+        "F1_Score": 0.5,
+        "Avg_TextLength": 2.0
     },
     "Fax": {
-        "jacc_sim": "0.3333333333333333",
-        "biobert_sim": "0.9650049",
-        "ensemble_sim": "0.5544183890024821",
-        "precision": "0.5",
-        "recall": "0.5",
-        "f1_score": "0.5"
+        "Jacc_Sim": 0.3333333333333333,
+        "BioBERT_Sim": 0.9650049209594727,
+        "Ensemble_Sim": 0.5544183890024821,
+        "Precision": 0.5,
+        "Recall": 0.5,
+        "F1_Score": 0.5,
+        "Avg_TextLength": 2.0
     },
     "Name": {
-        "jacc_sim": "0.2",
-        "biobert_sim": "0.96495396",
-        "ensemble_sim": "0.4677338856458664",
-        "precision": "0.3333333333333333",
-        "recall": "0.3333333333333333",
-        "f1_score": "0.3333333333333333"
+        "Jacc_Sim": 0.2,
+        "BioBERT_Sim": 0.9649539589881897,
+        "Ensemble_Sim": 0.4677338856458664,
+        "Precision": 0.3333333333333333,
+        "Recall": 0.3333333333333333,
+        "F1_Score": 0.3333333333333333,
+        "Avg_TextLength": 3.0
     },
     "Practice": {
-        "jacc_sim": "0.0",
-        "biobert_sim": "0.7882302",
-        "ensemble_sim": "0.27588056325912474",
-        "precision": "0.0",
-        "recall": "0.0",
-        "f1_score": "Nan"
+        "Jacc_Sim": 0.0,
+        "BioBERT_Sim": 0.7882301807403564,
+        "Ensemble_Sim": 0.27588056325912474,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": "Nan",
+        "Avg_TextLength": 3.0
     },
     "Address": {
-        "jacc_sim": "0.3333333333333333",
-        "biobert_sim": "0.9772203",
-        "ensemble_sim": "0.5586937705675761",
-        "precision": "0.5",
-        "recall": "0.5",
-        "f1_score": "0.5"
+        "Jacc_Sim": 0.3333333333333333,
+        "BioBERT_Sim": 0.9772202968597412,
+        "Ensemble_Sim": 0.5586937705675761,
+        "Precision": 0.5,
+        "Recall": 0.5,
+        "F1_Score": 0.5,
+        "Avg_TextLength": 8.0
     },
     "Diagnosis": {
-        "jacc_sim": "0.0",
-        "biobert_sim": "0.8713915",
-        "ensemble_sim": "0.30498701632022857",
-        "precision": "0.0",
-        "recall": "0.0",
-        "f1_score": "Nan"
+        "Jacc_Sim": 0.0,
+        "BioBERT_Sim": 0.8713914752006531,
+        "Ensemble_Sim": 0.30498701632022857,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": "Nan",
+        "Avg_TextLength": 2.0
     },
     "ICD-10": {
-        "jacc_sim": "0.0",
-        "biobert_sim": "0.90561384",
-        "ensemble_sim": "0.31696484386920926",
-        "precision": "0.0",
-        "recall": "0.0",
-        "f1_score": "Nan"
+        "Jacc_Sim": 0.0,
+        "BioBERT_Sim": 0.9056138396263123,
+        "Ensemble_Sim": 0.31696484386920926,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": "Nan",
+        "Avg_TextLength": 3.0
     },
     "Order Name": {
-        "jacc_sim": "0.75",
-        "biobert_sim": "0.987069",
-        "ensemble_sim": "0.8329741537570954",
-        "precision": "0.8571428571428571",
-        "recall": "0.8571428571428571",
-        "f1_score": "0.8571428571428571"
+        "Jacc_Sim": 0.75,
+        "BioBERT_Sim": 0.9870690107345581,
+        "Ensemble_Sim": 0.8329741537570954,
+        "Precision": 0.8571428571428571,
+        "Recall": 0.8571428571428571,
+        "F1_Score": 0.8571428571428571,
+        "Avg_TextLength": 7.0
     },
     "Schedule Within": {
-        "jacc_sim": "1.0",
-        "biobert_sim": "1.0",
-        "ensemble_sim": "1.0",
-        "precision": "1.0",
-        "recall": "1.0",
-        "f1_score": "1.0"
+        "Jacc_Sim": 1.0,
+        "BioBERT_Sim": 1.0,
+        "Ensemble_Sim": 1.0,
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1_Score": 1.0,
+        "Avg_TextLength": 2.0
     },
     "Note to Provider": {
-        "jacc_sim": "0.6666666666666666",
-        "biobert_sim": "0.9759096",
-        "ensemble_sim": "0.774901690085729",
-        "precision": "0.9090909090909091",
-        "recall": "0.7142857142857143",
-        "f1_score": "0.8"
+        "Jacc_Sim": 0.6666666666666666,
+        "BioBERT_Sim": 0.9759095907211304,
+        "Ensemble_Sim": 0.774901690085729,
+        "Precision": 0.9090909090909091,
+        "Recall": 0.7142857142857143,
+        "F1_Score": 0.8,
+        "Avg_TextLength": 14.5
     },
     "Reason for Referral": {
-        "jacc_sim": "0.0",
-        "biobert_sim": "0.8555493",
-        "ensemble_sim": "0.29944224655628204",
-        "precision": "0.0",
-        "recall": "0.0",
-        "f1_score": "Nan"
+        "Jacc_Sim": 0.0,
+        "BioBERT_Sim": 0.8555492758750916,
+        "Ensemble_Sim": 0.29944224655628204,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": "Nan",
+        "Avg_TextLength": 2.5
     },
     "of requested visits": {
-        "jacc_sim": "1.0",
-        "biobert_sim": "0.9999999",
-        "ensemble_sim": "0.9999999582767487",
-        "precision": "1.0",
-        "recall": "1.0",
-        "f1_score": "1.0"
+        "Jacc_Sim": 1.0,
+        "BioBERT_Sim": 0.9999998807907104,
+        "Ensemble_Sim": 0.9999999582767487,
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1_Score": 1.0,
+        "Avg_TextLength": 1.0
     },
     "Patient Name": {
-        "jacc_sim": "0.0",
-        "biobert_sim": "0.9040989",
-        "ensemble_sim": "0.3164346247911453",
-        "precision": "0.0",
-        "recall": "0.0",
-        "f1_score": "Nan"
+        "Jacc_Sim": 0.0,
+        "BioBERT_Sim": 0.9040989279747009,
+        "Ensemble_Sim": 0.3164346247911453,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": "Nan",
+        "Avg_TextLength": 2.0
     },
     "Sex": {
-        "jacc_sim": "0.0",
-        "biobert_sim": "0.9597381",
-        "ensemble_sim": "0.3359083265066147",
-        "precision": "0.0",
-        "recall": "0.0",
-        "f1_score": "Nan"
+        "Jacc_Sim": 0.0,
+        "BioBERT_Sim": 0.9597380757331848,
+        "Ensemble_Sim": 0.3359083265066147,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": "Nan",
+        "Avg_TextLength": 1.0
     },
     "DOB": {
-        "jacc_sim": "0.0",
-        "biobert_sim": "0.96426815",
-        "ensemble_sim": "0.3374938517808914",
-        "precision": "0.0",
-        "recall": "0.0",
-        "f1_score": "Nan"
+        "Jacc_Sim": 0.0,
+        "BioBERT_Sim": 0.964268147945404,
+        "Ensemble_Sim": 0.3374938517808914,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": "Nan",
+        "Avg_TextLength": 1.0
     },
     "Age": {
-        "jacc_sim": "0.0",
-        "biobert_sim": "0.96311337",
-        "ensemble_sim": "0.33708967864513395",
-        "precision": "0.0",
-        "recall": "0.0",
-        "f1_score": "Nan"
+        "Jacc_Sim": 0.0,
+        "BioBERT_Sim": 0.9631133675575256,
+        "Ensemble_Sim": 0.33708967864513395,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": "Nan",
+        "Avg_TextLength": 1.0
     },
     "Patient Address": {
-        "jacc_sim": "0.3333333333333333",
-        "biobert_sim": "0.9726156",
-        "ensemble_sim": "0.5570821265379587",
-        "precision": "0.5",
-        "recall": "0.5",
-        "f1_score": "0.5"
+        "Jacc_Sim": 0.3333333333333333,
+        "BioBERT_Sim": 0.9726155996322632,
+        "Ensemble_Sim": 0.5570821265379587,
+        "Precision": 0.5,
+        "Recall": 0.5,
+        "F1_Score": 0.5,
+        "Avg_TextLength": 6.0
     },
     "Patient Phone": {
-        "jacc_sim": "0.42857142857142855",
-        "biobert_sim": "0.9840683",
-        "ensemble_sim": "0.6229953246457236",
-        "precision": "0.6",
-        "recall": "0.6",
-        "f1_score": "0.6"
+        "Jacc_Sim": 0.42857142857142855,
+        "BioBERT_Sim": 0.9840682744979858,
+        "Ensemble_Sim": 0.6229953246457236,
+        "Precision": 0.6,
+        "Recall": 0.6,
+        "F1_Score": 0.6,
+        "Avg_TextLength": 6.0
     },
     "Primary Insurance": {
-        "jacc_sim": "0.0",
-        "biobert_sim": "0.8227477",
-        "ensemble_sim": "0.28796169757843015",
-        "precision": "0.0",
-        "recall": "0.0",
-        "f1_score": "Nan"
+        "Jacc_Sim": 0.0,
+        "BioBERT_Sim": 0.8227477073669434,
+        "Ensemble_Sim": 0.28796169757843015,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": "Nan",
+        "Avg_TextLength": 2.5
     },
     "ID": {
-        "jacc_sim": "0.0",
-        "biobert_sim": "0.9144957",
-        "ensemble_sim": "0.3200734972953796",
-        "precision": "0.0",
-        "recall": "0.0",
-        "f1_score": "Nan"
+        "Jacc_Sim": 0.0,
+        "BioBERT_Sim": 0.9144957065582275,
+        "Ensemble_Sim": 0.3200734972953796,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": "Nan",
+        "Avg_TextLength": 1.0
     },
     "Policy Holder": {
-        "jacc_sim": "0.0",
-        "biobert_sim": "0.9040989",
-        "ensemble_sim": "0.3164346247911453",
-        "precision": "0.0",
-        "recall": "0.0",
-        "f1_score": "Nan"
+        "Jacc_Sim": 0.0,
+        "BioBERT_Sim": 0.9040989279747009,
+        "Ensemble_Sim": 0.3164346247911453,
+        "Precision": 0.0,
+        "Recall": 0.0,
+        "F1_Score": "Nan",
+        "Avg_TextLength": 2.0
     },
     "Secondary Insurance": {
-        "jacc_sim": "1.0",
-        "biobert_sim": "1.0000002",
-        "ensemble_sim": "1.0000000834465026",
-        "precision": "1.0",
-        "recall": "1.0",
-        "f1_score": "1.0"
+        "Jacc_Sim": 1.0,
+        "BioBERT_Sim": 1.000000238418579,
+        "Ensemble_Sim": 1.0000000834465026,
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1_Score": 1.0,
+        "Avg_TextLength": 2.0
     },
     "Notes": {
-        "jacc_sim": "0.3515625",
-        "biobert_sim": "0.98523706",
-        "ensemble_sim": "0.5733485966920853",
-        "precision": "0.5421686746987951",
-        "recall": "0.5",
-        "f1_score": "0.5202312138728323"
+        "Jacc_Sim": 0.3515625,
+        "BioBERT_Sim": 0.9852370619773865,
+        "Ensemble_Sim": 0.5733485966920853,
+        "Precision": 0.5421686746987951,
+        "Recall": 0.5,
+        "F1_Score": 0.5202312138728323,
+        "Avg_TextLength": 117.0
     },
     "Signature": {
-        "jacc_sim": "0.5",
-        "biobert_sim": "0.9843545",
-        "ensemble_sim": "0.669524073600769",
-        "precision": "0.6666666666666666",
-        "recall": "0.6666666666666666",
-        "f1_score": "0.6666666666666666"
+        "Jacc_Sim": 0.5,
+        "BioBERT_Sim": 0.9843544960021973,
+        "Ensemble_Sim": 0.669524073600769,
+        "Precision": 0.6666666666666666,
+        "Recall": 0.6666666666666666,
+        "F1_Score": 0.6666666666666666,
+        "Avg_TextLength": 6.0
     },
     "Footer": {
-        "jacc_sim": "0.26666666666666666",
-        "biobert_sim": "0.98043185",
-        "ensemble_sim": "0.5164844824870427",
-        "precision": "0.42105263157894735",
-        "recall": "0.42105263157894735",
-        "f1_score": "0.42105263157894735"
+        "Jacc_Sim": 0.26666666666666666,
+        "BioBERT_Sim": 0.980431854724884,
+        "Ensemble_Sim": 0.5164844824870427,
+        "Precision": 0.42105263157894735,
+        "Recall": 0.42105263157894735,
+        "F1_Score": 0.42105263157894735,
+        "Avg_TextLength": 18.0
+    },
+    "Total Average Score": {
+        "Jaccard Average": 0.3123857355442177,
+        "BioBERT Average": 0.9449485114642552,
+        "Ensemble Average": 0.5337827071162309,
+        "Weighted Ensemble Average": 0.5774598200099397
     }
 }
