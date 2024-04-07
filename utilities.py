@@ -66,7 +66,7 @@ def jaccard_similarity(str1, str2):
 
         jacc_sim = len(intersection)/len(union) # Same as acuracy
         return jacc_sim, precision, recall, f1_score 
-    elif ('str' in str(type(str1))) & ('atr' in str(type(str2))):
+    elif ('str' in str(type(str1))) & ('str' in str(type(str2))):
         # If input is a string, then the string is first converted to a list of word, and then to a unique list of words
         set1 = set(str1.split())
         set2 = set(str2.split())
@@ -84,7 +84,7 @@ def jaccard_similarity(str1, str2):
         return jacc_sim, precision, recall, f1_score
     else:
         print('Please make sure the two inputs to be compared are both either lists or strings.')
-        return None
+        return None, None, None, None
     
 
 def biobert_similarity(text1, text2, model, tokenizer):
@@ -113,8 +113,8 @@ def biobert_similarity(text1, text2, model, tokenizer):
     sentence_embedding2 = outputs2.last_hidden_state.mean(dim=1)
 
     # Computes the cosine similarity of the two sentence embeddings
-    cos_sim = cosine_similarity(sentence_embedding1, sentence_embedding2)[0][0]
-    return cos_sim
+    biobert_sim = cosine_similarity(sentence_embedding1, sentence_embedding2)[0][0]
+    return biobert_sim
 
 
 def ensemble_similarity(text1, text2, nlp, model, tokenizer):
