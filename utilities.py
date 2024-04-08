@@ -1,6 +1,6 @@
 from transformers import AutoTokenizer, AutoModel
 from sklearn.metrics.pairwise import cosine_similarity
-import torch, spacy, re
+import torch, spacy, re, time
 
 #"python -m spacy download en_core_web_sm": to download the en_core_web_sm dictionary.
 
@@ -87,6 +87,7 @@ def jaccard_similarity(str1, str2):
         return None, None, None, None
     
 
+# Function to calculate BioBERT-Cosine similarity
 def biobert_similarity(text1, text2, model, tokenizer):
     '''Function to compute the BioBERT-Cosine Similarity between two texts. The function first converts
     the text to embeddings using the BioBERT model, and then calculates the cosine similarity of the vector
@@ -100,23 +101,33 @@ def biobert_similarity(text1, text2, model, tokenizer):
     '''
 
     # Tokenize the sentence
+    # start_3 = time.perf_counter()
     tokens1 = tokenizer(text1, return_tensors="pt")
     tokens2 = tokenizer(text2, return_tensors="pt")
+    # finish_3 = time.perf_counter()
+    # print(f"Finished tokenizing the sentences in {round((finish_3-start_3), 2)} second(s)")
 
     # Forward pass through the model to convert the token representations of the texts to vector embeddings using the pretrained model
+    # start_3 = time.perf_counter()
     with torch.no_grad():
         outputs1 = model(**tokens1)
         outputs2 = model(**tokens2)
+    # finish_3 = time.perf_counter()
+    # print(f"Finished forward pass in {round((finish_3-start_3), 2)} second(s)")
 
     # Extract the sentence embeddings (last hidden states of all tokens)
+    # start_3 = time.perf_counter()
     sentence_embedding1 = outputs1.last_hidden_state.mean(dim=1)  # Mean pooling
     sentence_embedding2 = outputs2.last_hidden_state.mean(dim=1)
+    # finish_3 = time.perf_counter()
+    # print(f"Finished extracting the sentence embedding from the model in {round((finish_3-start_3), 2)} second(s)")
 
     # Computes the cosine similarity of the two sentence embeddings
     biobert_sim = cosine_similarity(sentence_embedding1, sentence_embedding2)[0][0]
     return biobert_sim
 
 
+# Function to calculate Ensemble similarity
 def ensemble_similarity(text1, text2, nlp, model, tokenizer):
     '''This ensemble combines two evaluation methods (Jaccard Similarity and BioBERT-Cosine Similarity) to score similarity
     between two texts.
@@ -139,17 +150,30 @@ def ensemble_similarity(text1, text2, nlp, model, tokenizer):
     tokenizer = tokenizer
     
     #Clean sentences using regex
+    # start_2 = time.perf_counter()
     cleantext1 = clean_sentence(text1)
     cleantext2 = clean_sentence(text2)
+    # finish_2 = time.perf_counter()
+    # print(f"Finished cleaning texts in {round((finish_2-start_2), 2)} second(s)")
     
     #Lematize the words in the sentences for more uniformity
+    # start_2 = time.perf_counter()
     lemmatext1 = lemmatize(cleantext1, nlp)
     lemmatext2 = lemmatize(cleantext2, nlp)
+    # finish_2 = time.perf_counter()
+    # print(f"Finished lemmatizing texts in {round((finish_2-start_2), 2)} second(s)")
     
     #Similarity scores
+    # start_2 = time.perf_counter()
     jacc_sim, precision, recall, f1_score = jaccard_similarity(lemmatext1, lemmatext2) #Jaccard Similarity is calculated on the transformed sentences
-    biobert_sim = biobert_similarity(text1, text2, model, tokenizer) #BioBERT-Cosine Similarity is calculated on the untransformed sentence
+    # finish_2 = time.perf_counter()
+    # print(f"Finished calculating Jaccard similarity in {round((finish_2-start_2), 2)} second(s)")
     
+    # start_2 = time.perf_counter()
+    biobert_sim = biobert_similarity(text1, text2, model, tokenizer) #BioBERT-Cosine Similarity is calculated on the untransformed sentence
+    # finish_2 = time.perf_counter()
+    # print(f"Finished calculating BioBERT-Cosine similarity in {round((finish_2-start_2), 2)} second(s)")
+
     #Ensemble (Weighted Average) of the Jaccard and BioBERT-Cosine Similarities is calculated with more weight on teh Jaccard similarity
     #More weight is given to Jaccard similarity because even though exactness of words can be a limited measure, it is still more important than just representing the general concept
     ensemble_sim = 0.65*jacc_sim + 0.35*biobert_sim

@@ -59,7 +59,7 @@ def test_biobert_similarity():
 def test_ensemble_similarity():
     text1 = "Please evaluate for potential cardiac causes of syncope and provide recommendations for further testing and management."
     text2 = "Please evaluate for potential arrhythmia and provide recommendations for further testing and management."
-    expected_list = [0.6666666666666666, 0.9759095907211304, 0.7749016483624775, 0.9090909090909091, 0.7142857142857143, 0.8]
+    expected_list = [0.6666666666666666, 0.9759095907211304, 0.774901690085729, 0.9090909090909091, 0.7142857142857143, 0.8]
 
     jacc_sim, biobert_sim, ensemble_sim, precision, recall, f1_score = utilities.ensemble_similarity(text1, text2, utilities.nlp, utilities.model, utilities.tokenizer)
     result_list = [jacc_sim, biobert_sim, ensemble_sim, precision, recall, f1_score]

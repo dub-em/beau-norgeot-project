@@ -252,9 +252,9 @@
         "Avg_TextLength": 18.0
     },
     "Total Average Score": {
-        "Jaccard Average": 0.3123857355442177,
+        "Jaccard Average": 0.3123857355442176,
         "BioBERT Average": 0.9449485114642552,
-        "Ensemble Average": 0.5337827071162309,
-        "Weighted Ensemble Average": 0.5774598200099397
+        "Ensemble Average": 0.5337827071162308,
+        "Weighted Ensemble Average": 0.5774598200099398
     }
 }
