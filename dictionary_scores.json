@@ -6,7 +6,9 @@
         "Precision": 1.0,
         "Recall": 1.0,
         "F1_Score": 1.0,
-        "Avg_TextLength": 2.0
+        "Avg_TextLength": 2.0,
+        "Words only in Original": [],
+        "Words only in Generated": []
     },
     "Date": {
         "Jacc_Sim": 0.0,
@@ -15,7 +17,13 @@
         "Precision": 0.0,
         "Recall": 0.0,
         "F1_Score": "Nan",
-        "Avg_TextLength": 1.0
+        "Avg_TextLength": 1.0,
+        "Words only in Original": [
+            "05102024"
+        ],
+        "Words only in Generated": [
+            "04022024"
+        ]
     },
     "To Provider": {
         "Jacc_Sim": 0.25,
@@ -24,7 +32,14 @@
         "Precision": 0.3333333333333333,
         "Recall": 0.5,
         "F1_Score": 0.4,
-        "Avg_TextLength": 2.5
+        "Avg_TextLength": 2.5,
+        "Words only in Original": [
+            "Partners"
+        ],
+        "Words only in Generated": [
+            "Group",
+            "Heartcare"
+        ]
     },
     "Phone": {
         "Jacc_Sim": 0.3333333333333333,
@@ -33,7 +48,13 @@
         "Precision": 0.5,
         "Recall": 0.5,
         "F1_Score": 0.5,
-        "Avg_TextLength": 2.0
+        "Avg_TextLength": 2.0,
+        "Words only in Original": [
+            "7891234"
+        ],
+        "Words only in Generated": [
+            "5551234"
+        ]
     },
     "Fax": {
         "Jacc_Sim": 0.3333333333333333,
@@ -42,7 +63,13 @@
         "Precision": 0.5,
         "Recall": 0.5,
         "F1_Score": 0.5,
-        "Avg_TextLength": 2.0
+        "Avg_TextLength": 2.0,
+        "Words only in Original": [
+            "7895678"
+        ],
+        "Words only in Generated": [
+            "5555678"
+        ]
     },
     "Name": {
         "Jacc_Sim": 0.2,
@@ -51,7 +78,15 @@
         "Precision": 0.3333333333333333,
         "Recall": 0.3333333333333333,
         "F1_Score": 0.3333333333333333,
-        "Avg_TextLength": 3.0
+        "Avg_TextLength": 3.0,
+        "Words only in Original": [
+            "Patel",
+            "Robert"
+        ],
+        "Words only in Generated": [
+            "Emily",
+            "Chen"
+        ]
     },
     "Practice": {
         "Jacc_Sim": 0.0,
@@ -60,7 +95,17 @@
         "Precision": 0.0,
         "Recall": 0.0,
         "F1_Score": "Nan",
-        "Avg_TextLength": 3.0
+        "Avg_TextLength": 3.0,
+        "Words only in Original": [
+            "Community",
+            "Health",
+            "Center"
+        ],
+        "Words only in Generated": [
+            "Downtown",
+            "Medicine",
+            "Family"
+        ]
     },
     "Address": {
         "Jacc_Sim": 0.3333333333333333,
@@ -69,7 +114,19 @@
         "Precision": 0.5,
         "Recall": 0.5,
         "F1_Score": 0.5,
-        "Avg_TextLength": 8.0
+        "Avg_TextLength": 8.0,
+        "Words only in Original": [
+            "321",
+            "Road",
+            "Pine",
+            "200"
+        ],
+        "Words only in Generated": [
+            "100",
+            "Avenue",
+            "789",
+            "Elm"
+        ]
     },
     "Diagnosis": {
         "Jacc_Sim": 0.0,
@@ -78,7 +135,15 @@
         "Precision": 0.0,
         "Recall": 0.0,
         "F1_Score": "Nan",
-        "Avg_TextLength": 2.0
+        "Avg_TextLength": 2.0,
+        "Words only in Original": [
+            "and",
+            "syncope",
+            "collapse"
+        ],
+        "Words only in Generated": [
+            "palpitation"
+        ]
     },
     "ICD-10": {
         "Jacc_Sim": 0.0,
@@ -87,7 +152,17 @@
         "Precision": 0.0,
         "Recall": 0.0,
         "F1_Score": "Nan",
-        "Avg_TextLength": 3.0
+        "Avg_TextLength": 3.0,
+        "Words only in Original": [
+            "and",
+            "R55",
+            "syncope",
+            "collapse"
+        ],
+        "Words only in Generated": [
+            "palpitation",
+            "r002"
+        ]
     },
     "Order Name": {
         "Jacc_Sim": 0.75,
@@ -96,7 +171,13 @@
         "Precision": 0.8571428571428571,
         "Recall": 0.8571428571428571,
         "F1_Score": 0.8571428571428571,
-        "Avg_TextLength": 7.0
+        "Avg_TextLength": 7.0,
+        "Words only in Original": [
+            "Consultation"
+        ],
+        "Words only in Generated": [
+            "Evaluation"
+        ]
     },
     "Schedule Within": {
         "Jacc_Sim": 1.0,
@@ -105,7 +186,9 @@
         "Precision": 1.0,
         "Recall": 1.0,
         "F1_Score": 1.0,
-        "Avg_TextLength": 2.0
+        "Avg_TextLength": 2.0,
+        "Words only in Original": [],
+        "Words only in Generated": []
     },
     "Note to Provider": {
         "Jacc_Sim": 0.6666666666666666,
@@ -114,7 +197,16 @@
         "Precision": 0.9090909090909091,
         "Recall": 0.7142857142857143,
         "F1_Score": 0.8,
-        "Avg_TextLength": 14.5
+        "Avg_TextLength": 14.5,
+        "Words only in Original": [
+            "cardiac",
+            "of",
+            "cause",
+            "syncope"
+        ],
+        "Words only in Generated": [
+            "arrhythmia"
+        ]
     },
     "Reason for Referral": {
         "Jacc_Sim": 0.0,
@@ -123,7 +215,16 @@
         "Precision": 0.0,
         "Recall": 0.0,
         "F1_Score": "Nan",
-        "Avg_TextLength": 2.5
+        "Avg_TextLength": 2.5,
+        "Words only in Original": [
+            "recurrent",
+            "syncope"
+        ],
+        "Words only in Generated": [
+            "and",
+            "palpitation",
+            "lightheadedness"
+        ]
     },
     "of requested visits": {
         "Jacc_Sim": 1.0,
@@ -132,7 +233,9 @@
         "Precision": 1.0,
         "Recall": 1.0,
         "F1_Score": 1.0,
-        "Avg_TextLength": 1.0
+        "Avg_TextLength": 1.0,
+        "Words only in Original": [],
+        "Words only in Generated": []
     },
     "Patient Name": {
         "Jacc_Sim": 0.0,
@@ -141,7 +244,15 @@
         "Precision": 0.0,
         "Recall": 0.0,
         "F1_Score": "Nan",
-        "Avg_TextLength": 2.0
+        "Avg_TextLength": 2.0,
+        "Words only in Original": [
+            "Davis",
+            "Elizabeth"
+        ],
+        "Words only in Generated": [
+            "Johnson",
+            "Michael"
+        ]
     },
     "Sex": {
         "Jacc_Sim": 0.0,
@@ -150,7 +261,13 @@
         "Precision": 0.0,
         "Recall": 0.0,
         "F1_Score": "Nan",
-        "Avg_TextLength": 1.0
+        "Avg_TextLength": 1.0,
+        "Words only in Original": [
+            "f"
+        ],
+        "Words only in Generated": [
+            "m"
+        ]
     },
     "DOB": {
         "Jacc_Sim": 0.0,
@@ -159,7 +276,13 @@
         "Precision": 0.0,
         "Recall": 0.0,
         "F1_Score": "Nan",
-        "Avg_TextLength": 1.0
+        "Avg_TextLength": 1.0,
+        "Words only in Original": [
+            "09081972"
+        ],
+        "Words only in Generated": [
+            "05221985"
+        ]
     },
     "Age": {
         "Jacc_Sim": 0.0,
@@ -168,7 +291,13 @@
         "Precision": 0.0,
         "Recall": 0.0,
         "F1_Score": "Nan",
-        "Avg_TextLength": 1.0
+        "Avg_TextLength": 1.0,
+        "Words only in Original": [
+            "51y8mo"
+        ],
+        "Words only in Generated": [
+            "38y10mo"
+        ]
     },
     "Patient Address": {
         "Jacc_Sim": 0.3333333333333333,
@@ -177,7 +306,17 @@
         "Precision": 0.5,
         "Recall": 0.5,
         "F1_Score": 0.5,
-        "Avg_TextLength": 6.0
+        "Avg_TextLength": 6.0,
+        "Words only in Original": [
+            "Maple",
+            "Avenue",
+            "789"
+        ],
+        "Words only in Generated": [
+            "Street",
+            "456",
+            "Oak"
+        ]
     },
     "Patient Phone": {
         "Jacc_Sim": 0.42857142857142855,
@@ -186,7 +325,15 @@
         "Precision": 0.6,
         "Recall": 0.6,
         "F1_Score": 0.6,
-        "Avg_TextLength": 6.0
+        "Avg_TextLength": 6.0,
+        "Words only in Original": [
+            "2468013",
+            "1357902"
+        ],
+        "Words only in Generated": [
+            "1234567",
+            "9876543"
+        ]
     },
     "Primary Insurance": {
         "Jacc_Sim": 0.0,
@@ -195,7 +342,16 @@
         "Precision": 0.0,
         "Recall": 0.0,
         "F1_Score": "Nan",
-        "Avg_TextLength": 2.5
+        "Avg_TextLength": 2.5,
+        "Words only in Original": [
+            "PPO",
+            "Aetna"
+        ],
+        "Words only in Generated": [
+            "United",
+            "HMO",
+            "Healthcare"
+        ]
     },
     "ID": {
         "Jacc_Sim": 0.0,
@@ -204,7 +360,13 @@
         "Precision": 0.0,
         "Recall": 0.0,
         "F1_Score": "Nan",
-        "Avg_TextLength": 1.0
+        "Avg_TextLength": 1.0,
+        "Words only in Original": [
+            "123456789012"
+        ],
+        "Words only in Generated": [
+            "XYZ987654321"
+        ]
     },
     "Policy Holder": {
         "Jacc_Sim": 0.0,
@@ -213,7 +375,15 @@
         "Precision": 0.0,
         "Recall": 0.0,
         "F1_Score": "Nan",
-        "Avg_TextLength": 2.0
+        "Avg_TextLength": 2.0,
+        "Words only in Original": [
+            "Davis",
+            "Elizabeth"
+        ],
+        "Words only in Generated": [
+            "Johnson",
+            "Michael"
+        ]
     },
     "Secondary Insurance": {
         "Jacc_Sim": 1.0,
@@ -222,7 +392,9 @@
         "Precision": 1.0,
         "Recall": 1.0,
         "F1_Score": 1.0,
-        "Avg_TextLength": 2.0
+        "Avg_TextLength": 2.0,
+        "Words only in Original": [],
+        "Words only in Generated": []
     },
     "Notes": {
         "Jacc_Sim": 0.3515625,
@@ -231,7 +403,94 @@
         "Precision": 0.5421686746987951,
         "Recall": 0.5,
         "F1_Score": 0.5202312138728323,
-        "Avg_TextLength": 117.0
+        "Avg_TextLength": 117.0,
+        "Words only in Original": [
+            "report",
+            "abnormality",
+            "hypertension",
+            "sudden",
+            "three",
+            "not",
+            "over",
+            "mg",
+            "six",
+            "deficit",
+            "minor",
+            "lose",
+            "family",
+            "arrhythmias",
+            "13585",
+            "prodromal",
+            "treat",
+            "recent",
+            "25",
+            "episode",
+            "most",
+            "head",
+            "death",
+            "week",
+            "20",
+            "dizzy",
+            "prior",
+            "fall",
+            "ago",
+            "cardiac",
+            "atorvastatin",
+            "feel",
+            "trauma",
+            "68",
+            "neurological",
+            "hyperlipidemia",
+            "daily",
+            "to",
+            "symptom",
+            "consciousness",
+            "two",
+            "result",
+            "hydrochlorothiazide",
+            "lightheaded",
+            "associate"
+        ],
+        "Words only in Generated": [
+            "medical",
+            "72",
+            "notable",
+            "rapid",
+            "drink",
+            "fibrillation",
+            "minute",
+            "alcohol",
+            "Lightheadedness",
+            "at",
+            "several",
+            "resolve",
+            "intermittent",
+            "contraction",
+            "sensation",
+            "mother",
+            "13080",
+            "nonsmoker",
+            "as",
+            "socially",
+            "premature",
+            "age",
+            "concurrently",
+            "atrial",
+            "describe",
+            "last",
+            "flutter",
+            "Family",
+            "his",
+            "occasional",
+            "sound",
+            "spontaneously",
+            "time",
+            "extra",
+            "lightheadedness",
+            "60",
+            "deny",
+            "diagnose"
+        ]
     },
     "Signature": {
         "Jacc_Sim": 0.5,
@@ -240,7 +499,15 @@
         "Precision": 0.6666666666666666,
         "Recall": 0.6666666666666666,
         "F1_Score": 0.6666666666666666,
-        "Avg_TextLength": 6.0
+        "Avg_TextLength": 6.0,
+        "Words only in Original": [
+            "Patel",
+            "Robert"
+        ],
+        "Words only in Generated": [
+            "Chen",
+            "Emily"
+        ]
     },
     "Footer": {
         "Jacc_Sim": 0.26666666666666666,
@@ -249,12 +516,38 @@
         "Precision": 0.42105263157894735,
         "Recall": 0.42105263157894735,
         "F1_Score": 0.42105263157894735,
-        "Avg_TextLength": 18.0
+        "Avg_TextLength": 18.0,
+        "Words only in Original": [
+            "321",
+            "COMMUNITY",
+            "CENTER",
+            "09081972",
+            "HEALTH",
+            "PINE",
+            "DAVIS",
+            "345678",
+            "200",
+            "Elizabeth",
+            "road"
+        ],
+        "Words only in Generated": [
+            "JOHNSON",
+            "downtown",
+            "ELM",
+            "AVENUE",
+            "05221985",
+            "Michael",
+            "789012",
+            "100",
+            "789",
+            "MEDICINE",
+            "FAMILY"
+        ]
     },
     "Total Average Score": {
-        "Jaccard Average": 0.3123857355442176,
+        "Jaccard Average": 0.3123857355442177,
         "BioBERT Average": 0.9449485114642552,
         "Ensemble Average": 0.5337827071162308,
-        "Weighted Ensemble Average": 0.5774598200099398
+        "Weighted Ensemble Average": 0.5774598200099399
     }
 }

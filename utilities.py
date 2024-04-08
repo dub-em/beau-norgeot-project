@@ -56,6 +56,7 @@ def jaccard_similarity(str1, str2):
 
         intersection = set1.intersection(set2) # Intersection of the two sets
         union = set1.union(set2) # Union of the two sets
+        disjoint = set1 ^ set2
         precision = len(intersection)/len(set2) # Precision of the LLM's prediction
         recall = len(intersection)/len(set1) # Recall of the LLM's prediction
         # F1-Score of the LLM's prediction
@@ -63,9 +64,11 @@ def jaccard_similarity(str1, str2):
             f1_score = 'Nan'
         else:
             f1_score = 2*((precision*recall)/(precision+recall))
+        onlyin_original = list(disjoint.intersection(set1))
+        onlyin_generated = list(disjoint.intersection(set2))
 
         jacc_sim = len(intersection)/len(union) # Same as acuracy
-        return jacc_sim, precision, recall, f1_score 
+        return jacc_sim, precision, recall, f1_score, onlyin_original, onlyin_generated
     elif ('str' in str(type(str1))) & ('str' in str(type(str2))):
         # If input is a string, then the string is first converted to a list of word, and then to a unique list of words
         set1 = set(str1.split())
@@ -73,18 +76,21 @@ def jaccard_similarity(str1, str2):
 
         intersection = set1.intersection(set2)
         union = set1.union(set2)
+        disjoint = set1 ^ set2
         precision = len(intersection)/len(set2)
         recall = len(intersection)/len(set1)
         if (precision == 0) & (recall == 0):
             f1_score = 'Nan'
         else:
             f1_score = 2*((precision*recall)/(precision+recall))
+        onlyin_original = list(disjoint.intersection(set1))
+        onlyin_generated = list(disjoint.intersection(set2))
 
         jacc_sim = len(intersection)/len(union)
-        return jacc_sim, precision, recall, f1_score
+        return jacc_sim, precision, recall, f1_score, onlyin_original, onlyin_generated
     else:
         print('Please make sure the two inputs to be compared are both either lists or strings.')
-        return None, None, None, None
+        return None, None, None, None, None, None
     
 
 # Function to calculate BioBERT-Cosine similarity
@@ -165,7 +171,7 @@ def ensemble_similarity(text1, text2, nlp, model, tokenizer):
     
     #Similarity scores
     # start_2 = time.perf_counter()
-    jacc_sim, precision, recall, f1_score = jaccard_similarity(lemmatext1, lemmatext2) #Jaccard Similarity is calculated on the transformed sentences
+    jacc_sim, precision, recall, f1_score, onlyin_original, onlyin_generated = jaccard_similarity(lemmatext1, lemmatext2) #Jaccard Similarity is calculated on the transformed sentences
     # finish_2 = time.perf_counter()
     # print(f"Finished calculating Jaccard similarity in {round((finish_2-start_2), 2)} second(s)")
     
@@ -178,4 +184,4 @@ def ensemble_similarity(text1, text2, nlp, model, tokenizer):
     #More weight is given to Jaccard similarity because even though exactness of words can be a limited measure, it is still more important than just representing the general concept
     ensemble_sim = 0.65*jacc_sim + 0.35*biobert_sim
 
-    return jacc_sim, biobert_sim, ensemble_sim, precision, recall, f1_score
+    return jacc_sim, biobert_sim, ensemble_sim, precision, recall, f1_score, onlyin_original, onlyin_generated

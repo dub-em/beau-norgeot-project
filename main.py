@@ -29,12 +29,12 @@ def dictionary_scoring(dictionary_1, dictionary_2, nlp, model, tokenizer):
             avg_textlength = sum([len(text1.split()), len(text2.split())])/2 #Computes the average length of both values to be used for the weighted average
             
             #Computes the Jaccard, BioBERT-Cosine and Ensemble Similarity of both texts
-            jacc_sim, biobert_sim, ensemble_sim, precision, recall, f1_score = utilities.ensemble_similarity(text1, text2, nlp, model, tokenizer)
+            jacc_sim, biobert_sim, ensemble_sim, precision, recall, f1_score, onlyin_original, onlyin_generated = utilities.ensemble_similarity(text1, text2, nlp, model, tokenizer)
             if f1_score == 'Nan':
-                score_list = [float(jacc_sim), float(biobert_sim), float(ensemble_sim), float(precision), float(recall), f1_score, float(avg_textlength)]
+                score_list = [float(jacc_sim), float(biobert_sim), float(ensemble_sim), float(precision), float(recall), f1_score, float(avg_textlength), onlyin_original, onlyin_generated]
             else:
-                score_list = [float(jacc_sim), float(biobert_sim), float(ensemble_sim), float(precision), float(recall), float(f1_score), float(avg_textlength)]
-            key_list = ['Jacc_Sim', 'BioBERT_Sim', 'Ensemble_Sim', 'Precision', 'Recall', 'F1_Score', 'Avg_TextLength']
+                score_list = [float(jacc_sim), float(biobert_sim), float(ensemble_sim), float(precision), float(recall), float(f1_score), float(avg_textlength), onlyin_original, onlyin_generated]
+            key_list = ['Jacc_Sim', 'BioBERT_Sim', 'Ensemble_Sim', 'Precision', 'Recall', 'F1_Score', 'Avg_TextLength', 'Words only in Original', 'Words only in Generated']
             score_dict = dict(zip(key_list, score_list)) #Creates a dictionary of scores using the computed values
             
             #Assigns the dictionary of scores to the key is was calculated for in the overall dictionary
@@ -48,8 +48,8 @@ def dictionary_scoring(dictionary_1, dictionary_2, nlp, model, tokenizer):
             avg_textlength = len(text1.split()) #Computes the average length of both values to be used for the weighted average
             
             #Computes the Jaccard, BioBERT-Cosine and Ensemble Similarity of both texts
-            score_list = [float(0.0), float(0.0), float(0.0), float(0.0), float(0.0), 'Nan', float(avg_textlength)]
-            key_list = ['Jacc_Sim', 'BioBERT_Sim', 'Ensemble_Sim', 'Precision', 'Recall', 'F1_Score', 'Avg_TextLength']
+            score_list = [float(0.0), float(0.0), float(0.0), float(0.0), float(0.0), 'Nan', float(avg_textlength), [], []]
+            key_list = ['Jacc_Sim', 'BioBERT_Sim', 'Ensemble_Sim', 'Precision', 'Recall', 'F1_Score', 'Avg_TextLength', 'Words only in Original', 'Words only in Generated']
             score_dict = dict(zip(key_list, score_list)) #Creates a dictionary of scores using the computed values
             
             #Assigns the dictionary of scores to the key is was calculated for in the overall dictionary
@@ -63,8 +63,8 @@ def dictionary_scoring(dictionary_1, dictionary_2, nlp, model, tokenizer):
             avg_textlength = len(text2.split()) #Computes the average length of both values to be used for the weighted average
             
             #Computes the Jaccard, BioBERT-Cosine and Ensemble Similarity of both texts
-            score_list = [float(0.0), float(0.0), float(0.0), float(0.0), float(0.0), 'Nan', float(avg_textlength)]
-            key_list = ['Jacc_Sim', 'BioBERT_Sim', 'Ensemble_Sim', 'Precision', 'Recall', 'F1_Score', 'Avg_TextLength']
+            score_list = [float(0.0), float(0.0), float(0.0), float(0.0), float(0.0), 'Nan', float(avg_textlength), [], []]
+            key_list = ['Jacc_Sim', 'BioBERT_Sim', 'Ensemble_Sim', 'Precision', 'Recall', 'F1_Score', 'Avg_TextLength', 'Words only in Original', 'Words only in Generated']
             score_dict = dict(zip(key_list, score_list)) #Creates a dictionary of scores using the computed values
             
             #Assigns the dictionary of scores to the key is was calculated for in the overall dictionary

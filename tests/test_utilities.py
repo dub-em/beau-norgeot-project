@@ -28,24 +28,35 @@ def test_jaccard_similarity():
     text_2 = 'please evaluate for potential arrhythmia and provide recommendations for further testing and management'
     text_list1 = ['please', 'evaluate', 'for', 'potential', 'cardiac', 'cause', 'of', 'syncope', 'and', 'provide', 'recommendation', 'for', 'further', 'testing', 'and', 'management']
     text_list2 = ['please', 'evaluate', 'for', 'potential', 'arrhythmia', 'and', 'provide', 'recommendation', 'for', 'further', 'testing', 'and', 'management']
-    expected_list = [0.6666666666666666, 0.9090909090909091, 0.7142857142857143, 0.8]
-    jacc_sim, precision, recall, f1_score = utilities.jaccard_similarity(text_1, text_2)
-    result_list = [jacc_sim, precision, recall, f1_score]
-    assert result_list == expected_list
-    jacc_sim, precision, recall, f1_score = utilities.jaccard_similarity(text_list1, text_list2)
-    result_list = [jacc_sim, precision, recall, f1_score]
-    assert result_list == expected_list
+    expected_list_1 = [0.6666666666666666, 0.9090909090909091, 0.7142857142857143, 0.8]
+    expected_list_2 = [['cardiac', 'of', 'syncope', 'cause'], ['arrhythmia']]
+    jacc_sim, precision, recall, f1_score, onlyin_original, onlyin_generated = utilities.jaccard_similarity(text_1, text_2)
+    result_list_1 = [jacc_sim, precision, recall, f1_score]
+    result_list_2 = [onlyin_original, onlyin_generated]
+    check_1 = [result_list_2[0][i] in expected_list_2[0] for i in range(len(result_list_2[0]))] + [expected_list_2[0][i] in result_list_2[0] for i in range(len(expected_list_2[0]))]
+    check_2 = [result_list_2[1][i] in expected_list_2[1] for i in range(len(result_list_2[1]))] + [expected_list_2[1][i] in result_list_2[1] for i in range(len(expected_list_2[1]))]
+    assert result_list_1 == expected_list_1
+    assert False not in check_1
+    assert False not in check_2
+    jacc_sim, precision, recall, f1_score, onlyin_original, onlyin_generated = utilities.jaccard_similarity(text_list1, text_list2)
+    result_list_1 = [jacc_sim, precision, recall, f1_score]
+    result_list_2 = [onlyin_original, onlyin_generated]
+    check_1 = [result_list_2[0][i] in expected_list_2[0] for i in range(len(result_list_2[0]))] + [expected_list_2[0][i] in result_list_2[0] for i in range(len(expected_list_2[0]))]
+    check_2 = [result_list_2[1][i] in expected_list_2[1] for i in range(len(result_list_2[1]))] + [expected_list_2[1][i] in result_list_2[1] for i in range(len(expected_list_2[1]))]
+    assert result_list_1 == expected_list_1
+    assert False not in check_1
+    assert False not in check_2
 
     text_1 = 'R55: Syncope and collapse'
     text_2 = 'R00.2: Palpitations'
     expected_list = [0.0, 0.0, 0.0, 'Nan']
-    jacc_sim, precision, recall, f1_score = utilities.jaccard_similarity(text_1, text_2)
+    jacc_sim, precision, recall, f1_score, onlyin_original, onlyin_generated = utilities.jaccard_similarity(text_1, text_2)
     result_list = [jacc_sim, precision, recall, f1_score]
     assert result_list == expected_list
 
-    jacc_sim, precision, recall, f1_score = utilities.jaccard_similarity(text_1, text_list2)
-    result_list = [jacc_sim, precision, recall, f1_score]
-    assert result_list == [None, None, None, None]
+    jacc_sim, precision, recall, f1_score, onlyin_original, onlyin_generated = utilities.jaccard_similarity(text_1, text_list2)
+    result_list = [jacc_sim, precision, recall, f1_score, onlyin_original, onlyin_generated]
+    assert result_list == [None, None, None, None, None, None]
 
 
 def test_biobert_similarity():
@@ -59,11 +70,17 @@ def test_biobert_similarity():
 def test_ensemble_similarity():
     text1 = "Please evaluate for potential cardiac causes of syncope and provide recommendations for further testing and management."
     text2 = "Please evaluate for potential arrhythmia and provide recommendations for further testing and management."
-    expected_list = [0.6666666666666666, 0.9759095907211304, 0.774901690085729, 0.9090909090909091, 0.7142857142857143, 0.8]
+    expected_list_1 = [0.6666666666666666, 0.9759095907211304, 0.774901690085729, 0.9090909090909091, 0.7142857142857143, 0.8]
+    expected_list_2 = [['cardiac', 'of', 'syncope', 'cause'], ['arrhythmia']]
 
-    jacc_sim, biobert_sim, ensemble_sim, precision, recall, f1_score = utilities.ensemble_similarity(text1, text2, utilities.nlp, utilities.model, utilities.tokenizer)
-    result_list = [jacc_sim, biobert_sim, ensemble_sim, precision, recall, f1_score]
-    assert result_list == expected_list
+    jacc_sim, biobert_sim, ensemble_sim, precision, recall, f1_score, onlyin_original, onlyin_generated = utilities.ensemble_similarity(text1, text2, utilities.nlp, utilities.model, utilities.tokenizer)
+    result_list_1 = [jacc_sim, biobert_sim, ensemble_sim, precision, recall, f1_score]
+    result_list_2 = [onlyin_original, onlyin_generated]
+    check_1 = [result_list_2[0][i] in expected_list_2[0] for i in range(len(result_list_2[0]))] + [expected_list_2[0][i] in result_list_2[0] for i in range(len(expected_list_2[0]))]
+    check_2 = [result_list_2[1][i] in expected_list_2[1] for i in range(len(result_list_2[1]))] + [expected_list_2[1][i] in result_list_2[1] for i in range(len(expected_list_2[1]))]
+    assert result_list_1 == expected_list_1
+    assert False not in check_1
+    assert False not in check_2
 
 
     

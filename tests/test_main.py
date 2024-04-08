@@ -21,7 +21,7 @@ def test_dictionary_scoring_1():
     assert False not in check_2
 
     #This checks if the score metrics listed are all present in the score results for each category in the dictionaries
-    key_list = [['Jacc_Sim', 'BioBERT_Sim', 'Ensemble_Sim', 'Precision', 'Recall', 'F1_Score', 'Avg_TextLength'], 
+    key_list = [['Jacc_Sim', 'BioBERT_Sim', 'Ensemble_Sim', 'Precision', 'Recall', 'F1_Score', 'Avg_TextLength', 'Words only in Original', 'Words only in Generated'], 
                 ['Jaccard Average', 'BioBERT Average', 'Ensemble Average', 'Weighted Ensemble Average']]
     check_1 = [str(type(score_dictionary[key])) == "<class 'dict'>" for key in list(score_dictionary.keys())]
     check_2 = [list(score_dictionary[key].keys()) in key_list for key in list(score_dictionary.keys())]
@@ -29,7 +29,7 @@ def test_dictionary_scoring_1():
     assert False not in check_2
 
     #This checks if the value type is as expected for all metrics calculated in the score results for each category in the dictionaries
-    check_1 = [[str(type(score_dictionary[key_1][key_2])) in ["<class 'float'>", "<class 'str'>"]
+    check_1 = [[str(type(score_dictionary[key_1][key_2])) in ["<class 'float'>", "<class 'str'>", "<class 'list'>"]
                 for key_2 in list(score_dictionary[key_1].keys())] for key_1 in list(score_dictionary.keys())]
     check_2 = [False not in check for check in check_1]
     assert False not in check_2
@@ -55,7 +55,7 @@ def test_dictionary_scoring_2():
     assert False not in check_2
 
     #This checks if the score metrics listed are all present in the score results for each category in the dictionaries
-    key_list = [['Jacc_Sim', 'BioBERT_Sim', 'Ensemble_Sim', 'Precision', 'Recall', 'F1_Score', 'Avg_TextLength'], 
+    key_list = [['Jacc_Sim', 'BioBERT_Sim', 'Ensemble_Sim', 'Precision', 'Recall', 'F1_Score', 'Avg_TextLength', 'Words only in Original', 'Words only in Generated'], 
                 ['Jaccard Average', 'BioBERT Average', 'Ensemble Average', 'Weighted Ensemble Average']]
     check_1 = [str(type(score_dictionary[key])) == "<class 'dict'>" for key in list(score_dictionary.keys())]
     check_2 = [list(score_dictionary[key].keys()) in key_list for key in list(score_dictionary.keys())]
@@ -63,7 +63,7 @@ def test_dictionary_scoring_2():
     assert False not in check_2
 
     #This checks if the value type is as expected for all metrics calculated in the score results for each category in the dictionaries
-    check_1 = [[str(type(score_dictionary[key_1][key_2])) in ["<class 'float'>", "<class 'str'>"]
+    check_1 = [[str(type(score_dictionary[key_1][key_2])) in ["<class 'float'>", "<class 'str'>", "<class 'list'>"]
                 for key_2 in list(score_dictionary[key_1].keys())] for key_1 in list(score_dictionary.keys())]
     check_2 = [False not in check for check in check_1]
     assert False not in check_2
